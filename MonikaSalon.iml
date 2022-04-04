@@ -7,22 +7,29 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="openjfx-17.0.1_windows-x64_bin-sdk" level="application" />
     <orderEntry type="module-library" exported="">
-      <library name="javafx-fxml">
+      <library>
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/14/javafx-fxml-14.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/14/javafx-fxml-14-win.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/14/javafx-controls-14.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/14/javafx-controls-14-win.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/14/javafx-graphics-14.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/14/javafx-graphics-14-win.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/14/javafx-base-14.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/14/javafx-base-14-win.jar!/" />
+          <root url="file://C:/Program Files/Java/jdk-17" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://C:/Program Files/Java/jdk-17" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="controlsfx" level="application" />
+    <orderEntry type="library" exported="" name="openjfx.javafx.graphics" level="application" />
+    <orderEntry type="library" exported="" name="junithelper.maven.plugin" level="application" />
+    <orderEntry type="library" exported="" name="openjfx.javafx.fxml" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/SQLite/sqlite-jdbc-3.36.0.3.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>

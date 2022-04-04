@@ -9,7 +9,8 @@ public class Database {
 
     private Connection connection; //make final
     private Statement stmt;
-    private final String url = "jdbc:sqlite:D:\\IntelliJ Java projecter\\MonikaSalon\\Customers";
+    private String databaseName = "Monicas.db";
+    private final String url = "jdbc:sqlite:"+databaseName;
 
     Database() {
         connection = null; //move to final and add throws clause to database constructor
@@ -18,6 +19,28 @@ public class Database {
             connection = DriverManager.getConnection(url);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+        }
+    }
+
+    //UPDATESTATEMENT
+
+    //prepared SQL-exequteUpdate
+    public void DbsqlUpdate(String SQLUpdate){
+        try{
+            Statement sta = connection.createStatement();
+            sta.executeUpdate(SQLUpdate);
+            sta.close();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+
+    //Install database
+    public void InstallDatabase(){
+        Database d =new Database();
+        if (d.connection == null) {  //todo er altid not null
+            DbsqlUpdate("CREATE DATABASE "+url);
+            System.out.println("Database opretet");
         }
     }
 
